@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let appCodeName = navigator.appCodeName;  // Get the application code name
+        let appName = navigator.appName;          // Get the application name
+        let appVersion = navigator.appVersion;    // Get the application version
+        let platform = navigator.platform;        // Get the platform
+        let userAgent = navigator.userAgent;      // Get the user agent string
+        let language = navigator.language;      // Get the browser language
+        let cookiesEnabled = navigator.cookieEnabled; // Check if cookies are enabled
+        let onlineStatus = navigator.onLine;      // Check if the browser is online
+
+        document.write("<h2>Navigator Object Information</h2>");
+        document.write("<p>Application Code Name: " + appCodeName + "</p>");
+        document.write("<p>Application Name: " + appName + "</p>");
+        document.write("<p>Application Version: " + appVersion + "</p>");
+        document.write("<p>Platform: " + platform + "</p>");
+        document.write("<p>User Agent: " + userAgent + "</p>");
+        document.write("<p>Language: " + language + "</p>");
+        document.write("<p>Cookies Enabled: " + cookiesEnabled + "</p>");
+        document.write("<p>Online Status: " + onlineStatus + "</p>");
+    </script>
+
+</body>
+</html>

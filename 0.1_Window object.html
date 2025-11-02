@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+
+    <button onclick="objAlert()">Click me</button>
+
+    <script>
+
+        function objAlert(){  // Function to show an alert
+            alert("Button clicked!");
+            document.write("Alert displayed.");
+        }
+
+        function objConfirm(){  // Function to show a confirmation dialog
+            let result = confirm("Do you want to proceed?");
+            if(result){
+                alert("You chose to proceed.");
+            } else {
+                alert("You canceled the action.");
+            }
+            document.write("Confirmation dialog closed.");
+        }
+
+        function objPrompt(){  // Function to show a prompt dialog
+            let name = prompt("Please enter your name:", "Guest");
+            document.write("Hello, " + name + "!");
+        }
+
+        function objOpen(){
+            open();  // Function to open a new window
+            document.write("New window opened.");
+        }
+
+        function objClose(){  
+            close(); // Function to close the current window
+            document.write("Window closed.");
+        }
+
+        function objPrint(){  // Function to print the current document
+            print();
+            document.write("Print dialog opened.");
+        }
+
+        setTimeout(function(){
+            alert("Welcome to the website!");  // Alert after 10 seconds
+        }, 10000);
+
+        
+    </script>
+</body>
+</html>
